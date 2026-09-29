@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; text-align: center; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; background-color: #4CAF50; color: white; border: none; border-radius: 5px; margin: 10px; }
+        button:hover { background-color: #45a049; }
+        #demo, #hoverText { font-size: 18px; margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Ví dụ về Sự kiện (Events)</h1>
+    
+    <h3>1. Sự kiện Click</h3>
+    <p>Nhấp vào nút bên dưới để xem thời gian hiện tại.</p>
+    <button onclick="displayDate()">Xem thời gian</button>
+    <p id="demo"></p>
+
+    <hr>
+
+    <h3>2. Sự kiện Hover (Mouseover / Mouseout)</h3>
+    <!-- Sự kiện gọi hàm trực tiếp trên thẻ HTML -->
+    <h1 id="hoverText" onmouseover="changeStyle(this)" onmouseout="resetStyle(this)">
+        Rê chuột vào đoạn văn bản này
+    </h1>
+
+    <script src="script.js"></script>
+</body>
+</html>

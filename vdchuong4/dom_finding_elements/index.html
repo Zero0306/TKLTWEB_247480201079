@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Finding Elements</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .highlight { background-color: yellow; }
+        .result-box { margin-top: 20px; padding: 15px; border: 1px dashed #333; background: #fafafa; }
+    </style>
+</head>
+<body>
+    <h1>Tìm kiếm phần tử trong HTML DOM (Finding HTML elements)</h1>
+
+    <h3>1. By ID</h3>
+    <p id="demoId">Đây là phần tử có thuộc tính <code>id="demoId"</code></p>
+
+    <h3>2. By Tag Name</h3>
+    <p>Đây là thẻ <code>&lt;p&gt;</code> thứ nhất cho phần Tag Name.</p>
+    <p>Đây là thẻ <code>&lt;p&gt;</code> thứ hai cho phần Tag Name.</p>
+    
+    <h3>3. By Class Name</h3>
+    <div class="demoClass">Thẻ div có <code>class="demoClass"</code> (1)</div>
+    <div class="demoClass">Thẻ div có <code>class="demoClass"</code> (2)</div>
+
+    <h3>4. By CSS Selectors</h3>
+    <p class="cssSelector">Đoạn văn này có <code>class="cssSelector"</code></p>
+    
+    <h3>5. By HTML Object Collections</h3>
+    <form id="frm1" action="">
+      Tên Sinh Viên: <input type="text" name="fname" value="Nguyễn Văn A"><br><br>
+      Mã Sinh Viên: <input type="text" name="lname" value="SV001"><br><br>
+    </form>
+
+    <hr>
+    <button onclick="thucHanhTimKiemDOM()" style="padding:10px; background:#4CAF50; color:white; border:none; cursor:pointer;">Thực thi các lệnh tìm kiếm DOM</button>
+    
+    <div class="result-box" id="ketQuaTimKiem">
+        <i>Kết quả tìm kiếm sẽ hiển thị ở đây...</i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

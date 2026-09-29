@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Các lệnh cơ bản JS</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        button { padding: 8px 15px; margin: 5px; cursor: pointer; background: #008CBA; color: white; border: none; }
+        .result { margin-top: 10px; padding: 10px; background: #e7f3fe; border-left: 5px solid #2196F3; min-height: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Các lệnh cơ bản trong JavaScript</h1>
+    
+    <h3>1. Lệnh document.write()</h3>
+    <p><i>(Dùng để ghi trực tiếp nội dung chuỗi, biến, biểu thức hoặc thẻ HTML vào luồng tài liệu)</i></p>
+    <div class="result">
+        <script>
+            // Chuỗi
+            document.write("Đây là chuỗi xuất bằng document.write()<br>");
+            
+            // Biến & Biểu thức
+            let x = 5, y = 10;
+            document.write("Biểu thức (x + y) với x=5, y=10 là: " + (x + y) + "<br>");
+            
+            // Thẻ HTML
+            document.write("<b style='color:red;'>Thẻ HTML in đậm và có màu đỏ được xuất bằng document.write()</b>");
+        </script>
+    </div>
+
+    <h3>2. Cấu trúc điều kiện (if, if else, switch ... case)</h3>
+    <button onclick="checkIfElse()">Kiểm tra if / else (Theo giờ)</button>
+    <div class="result" id="if-demo"></div>
+    
+    <button onclick="checkSwitch()">Kiểm tra switch / case (Theo thứ)</button>
+    <div class="result" id="switch-demo"></div>
+
+    <h3>3. Vòng lặp (for, while, do while)</h3>
+    <button onclick="runFor()">Vòng lặp For</button>
+    <button onclick="runWhile()">Vòng lặp While</button>
+    <button onclick="runDoWhile()">Vòng lặp Do While</button>
+    <div class="result" id="loop-demo"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

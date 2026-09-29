@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; }
+        button { padding: 10px 15px; margin: 5px; cursor: pointer; }
+        #myImage { width: 200px; height: 200px; border: 2px solid #ccc; display: block; margin: 15px 0; background-color: #eee; text-align: center; line-height: 200px;}
+    </style>
+</head>
+<body>
+    <h1>Thay đổi nội dung DOM</h1>
+    
+    <h3>1. Thay đổi Text (innerHTML)</h3>
+    <p id="demo">JavaScript có thể thay đổi nội dung của HTML.</p>
+    <button type="button" onclick="changeContent()">Đổi nội dung</button>
+
+    <hr>
+
+    <h3>2. Thay đổi Thuộc tính (Attributes)</h3>
+    <p>JavaScript có thể thay đổi thuộc tính src của thẻ ảnh.</p>
+    <!-- Giả lập ảnh bằng div có màu nền để không bị lỗi 404 nếu không có ảnh thực tế -->
+    <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Light Bulb">
+    <button onclick="turnOnLight()">Bật đèn</button>
+    <button onclick="turnOffLight()">Tắt đèn</button>
+
+    <hr>
+
+    <h3>3. Thay đổi CSS (Styles)</h3>
+    <p id="styleText">Đoạn văn này sẽ đổi màu và kích thước khi nhấn nút.</p>
+    <button onclick="changeStyle()">Đổi Style</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

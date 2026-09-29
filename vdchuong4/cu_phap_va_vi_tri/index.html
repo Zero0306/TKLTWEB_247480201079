@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cú pháp và Vị trí JS</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        button { padding: 10px; margin: 5px; cursor: pointer; }
+    </style>
+    <!-- JS ở thẻ HEAD -->
+    <script>
+        function scriptInHead() {
+            alert("Đoạn JS này được khai báo bên trong thẻ <head>");
+        }
+    </script>
+</head>
+<body>
+    <h1>Cú pháp cơ bản và Vị trí đặt JavaScript</h1>
+    
+    <!-- Inline JS -->
+    <button onclick="alert('Đây là JS Inline, viết trực tiếp trên thuộc tính sự kiện của thẻ HTML!')">Inline JS</button>
+    
+    <button onclick="scriptInHead()">JS trong Head</button>
+    
+    <button onclick="scriptInBody()">JS External (File ngoài)</button>
+    
+    <hr>
+    
+    <!-- JS External -->
+    <script src="script.js"></script>
+    
+    <!-- JS ở cuối BODY -->
+    <script>
+        document.write("<p><strong>Lưu ý:</strong> Đoạn JS này nằm ở cuối thẻ &lt;body&gt; (Thường được khuyên dùng để HTML tải xong giao diện trước rồi mới tải JS, giúp trang web load nhanh hơn).</p>");
+    </script>
+</body>
+</html>
