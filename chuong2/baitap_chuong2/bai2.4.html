@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2.4</title>
+    <style>
+        .header { display: flex; justify-content: space-between; text-align: center; font-weight: bold; font-size: 14px;}
+        .title { text-align: center; font-family: Verdana; font-size: 20px; color: red; font-weight: bold; margin: 20px 0;}
+        .form-row { margin-bottom: 10px; display: flex; align-items: flex-start; }
+        .label { width: 100px; font-family: Arial; padding-top: 2px;}
+        .input-group { flex-grow: 1; }
+        .buttons { text-align: center; margin-top: 20px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Đăng ký dự thi</legend>
+        <div class="header">
+            <div>
+                TRƯỜNG ĐẠI HỌC BẠC LIÊU<br>
+                KHOA KỸ THUẬT VÀ CÔNG NGHỆ
+            </div>
+            <div>
+                CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM<br>
+                <span style="font-weight: normal; font-size: 12px; text-decoration: underline;">Độc lập - Tự do - Hạnh phúc</span>
+            </div>
+        </div>
+        
+        <div class="title">ĐĂNG KÝ XÉT TUYỂN</div>
+
+        <form style="width: 400px; margin: 0 auto;">
+            <div class="form-row">
+                <div class="label">Họ tên:</div>
+                <div class="input-group">
+                    <input type="text" style="width: 200px;">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="label">Giới tính:</div>
+                <div class="input-group">
+                    <input type="radio" name="gender" id="nam" checked> <label for="nam">Nam</label>
+                    <input type="radio" name="gender" id="nu" style="margin-left: 30px;"> <label for="nu">Nữ</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="label">Ngành thi:</div>
+                <div class="input-group">
+                    <div><input type="radio" name="nganh" id="cntt" checked> <label for="cntt">Công nghệ thông tin</label></div>
+                    <div><input type="radio" name="nganh" id="mamnon"> <label for="mamnon">Mầm non</label></div>
+                    <div><input type="radio" name="nganh" id="amnhac"> <label for="amnhac">Âm nhạc</label></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="button" style="width: 100px; font-weight: bold;">Đồng ý</button>
+                <button type="button" style="width: 120px; font-weight: bold; margin-left: 20px;">Không đồng ý</button>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
