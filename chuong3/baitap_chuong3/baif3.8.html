@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 3.8 - Menu Ngang Dropdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 30px;
+        }
+
+        
+        ul.menu-ngang {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #222; 
+            width: 750px;
+            border-radius: 4px;
+        }
+
+        ul.menu-ngang > li {
+            float: left;
+            position: relative;
+        }
+
+        ul.menu-ngang li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+       
+        ul.menu-ngang li > a:hover {
+            background-color: #444;
+        }
+
+       
+        ul.menu-con {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            z-index: 100;
+        }
+
+        ul.menu-con li {
+            position: relative;
+            border-bottom: 1px solid #444;
+        }
+
+        ul.menu-con li a {
+            color: #7eeec7;
+            padding: 10px 15px;
+            text-align: left;
+        }
+
+        ul.menu-con li a:hover {
+            background-color: #555;
+            color: #141212;
+        }
+
+        
+        ul.menu-ngang li:hover ul.menu-con {
+            display: block;
+        }
+
+        
+        ul.menu-cap3 {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%; 
+            background-color: #333;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        
+        ul.menu-con li:hover ul.menu-cap3 {
+            display: block;
+        }
+
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <ul class="menu-ngang clearfix">
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li>
+            <a href="#">Khóa học &nbsp;▼</a>
+            <!-- Menu cấp 2 -->
+            <ul class="menu-con">
+                <li>
+                    <a href="#">Tin học cơ bản &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ▸</a>
+                    <!-- Menu cấp 3 -->
+                    <ul class="menu-cap3">
+                        <li><a href="#">Microsoft Word 2010</a></li>
+                        <li><a href="#">Microsoft Excel 2010</a></li>
+                        <li><a href="#">Microsoft Powerpoint 2010</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tin học phổ thông</a></li>
+                <li><a href="#">Lập trình Pascal</a></li>
+                <li><a href="#">Lập trình C</a></li>
+                <li><a href="#">Thiết kế website</a></li>
+                <li><a href="#">Vẽ kỹ thuật AutoCAD</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Bài viết</a></li>
+        <li><a href="#">Thủ thuật</a></li>
+    </ul>
+
+</body>
+</html>
