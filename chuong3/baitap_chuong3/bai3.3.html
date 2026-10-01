@@ -1,38 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bài 3.3</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+      <style>
+      .box {
+        background-color: pink;     
+        border: 2px solid #e06666;   
+        border-radius: 8px;          
+        padding: 16px 24px;          
+        display: inline-block;      
+      }
+      .title {
+        color: aqua;
+        text-align: center;
+        margin-top: 0;
+      }
+      .song-list {
+        color: rgb(19, 19, 20);
+        font-family: "Times New Roman", Times, serif;
+        font-size: 14pt;
+        margin-bottom: 0;
+      }
+    </style>
   </head>
   <body>
-    <table>
-      <h1 style="color: aqua; text-align: center">
-        Các bài hát thiếu nhi hay nhất
-      </h1>
-
-      <tr>
-        <p>
-          <td>
-            <ol
-              style="
-                color: rgb(19, 19, 20);
-                font-family: Times New Roman;
-                font-size: 14pt;
-              "
-            >
-              <li>Ai yêu Bác Hồ Chí Minh hơn chúng em nhi đồng - Phong Nhã</li>
-              <li>Bác Hồ người dạy cho em tất cả - Hoàng Long</li>
-              <li>Bàn tay mẹ - Bùi Đình Thảo, Tạ Hữu Yến</li>
-              <li>Bụi phấn - Vũ Hoàng, Lê Văn Lộc</li>
-              <li>Ngợi ca tổ quốc</li>
-              <li>Chiếc đèn ông sao</li>
-              <li>cho con</li>
-              <li>Dàn đồng ca mùa hạ</li>
-            </ol>
-          </td>
-        </p>
-      </tr>
-    </table>
-  </body>
+    <div class="box">
+      <h1 class="title">Các bài hát thiếu nhi hay nhất</h1>
+      <ol class="song-list">
+        <li>Ai yêu Bác Hồ Chí Minh hơn chúng em nhi đồng - Phong Nhã</li>
+        <li>Bác Hồ người dạy cho em tất cả - Hoàng Long</li>
+        <li>Bàn tay mẹ - Bùi Đình Thảo, Tạ Hữu Yến</li>
+        <li>Bụi phấn - Vũ Hoàng, Lê Văn Lộc</li>
+        <li>Ngợi ca tổ quốc</li>
+        <li>Chiếc đèn ông sao</li>
+        <li>Cho con</li>
+        <li>Dàn đồng ca mùa hạ</li>
+      </ol>
+    </div>
+</body>
 </html>

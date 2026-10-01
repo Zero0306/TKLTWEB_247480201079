@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 3.7 - Menu dọc</title>
+    <style>
+        
+        body {
+            background-color: #ffffe0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        
+        h2 {
+            color: red;
+        }
+
+        
+        .desc {
+            font-family: Verdana, sans-serif;
+            color: green;
+        }
+
+        
+        ol.ordered-list {
+            font-family: Verdana, sans-serif;
+            color: purple;
+        }
+
+        
+        ul.unordered-list {
+            font-family: "Times New Roman", serif;
+            color: blue;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 20px;
+            border: 1px solid #181616;
+            background-color: #94cae4;
+        }
+
+        
+        .menu- dọc {
+            width: 250px;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .menu-doc ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-doc li a {
+            display: block;
+            color: rgb(17, 16, 16);
+            padding: 10px 15px;
+            text-decoration: none;
+            border-bottom: 1px solid #444;
+        }
+
+        .menu-doc li a:hover {
+            background-color: #555;
+        }
+
+        
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>TRANG CHỦ - QUẢN LÝ ĐÀO TẠO</h2>
+    
+   
+
+    <div class="container">
+        
+        <div class="menu-doc">
+            <ul>
+                <li><a href="gioithieu.htm">Giới thiệu</a></li>
+                <li><a href="tintuc.htm">Tin tức</a></li>
+                <li><a href="daotao.htm">Đào tạo</a></li>
+                <li><a href="thoikhoabieu.htm">Thời khóa biểu</a></li>
+                <li><a href="lichthi.htm">Lịch thi</a></li>
+                <li><a href="phongchucnang.htm">Phòng chức năng</a></li>
+                <li><a href="cackhoa.htm">Các Khoa</a></li>
+            </ul>
+        </div>
+
+       
+        <div class="content">
+            <h3>Giới thiệu về Trung tâm Công nghệ phần mềm</h3>
+            <p>Trung tâm được thành lập ngày 10/02/1999, trụ sở đặt tại Khoa Kỹ thuật và Công nghệ - Trường Đại học Bạc Liêu,...</p>
+        </div>
+    </div>
+
+</body>
+</html>
