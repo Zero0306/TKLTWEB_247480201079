@@ -5,28 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<!-- class="box" tạo khối hộp chứa ndung bên trong(hộp chưa ds các bài hát) 
+     class = 'song list' tạo 1 ds có thứ tự
+     box: khung chưa chính
+     border:2px
+     -->
       <style>
       .box {
         background-color: pink;     
-        border: 2px solid #e06666;   
-        border-radius: 8px;          
-        padding: 16px 24px;          
-        display: inline-block;      
+        border: 2px solid #e06666;   /* tạo đường viền có độ dày 2 pixel, solid:nét liền */
+        border-radius: 8px;   /* bo tròn 4 góc để khung dễ nhìn hơn */       
+        padding: 16px 24px;     /* tạo khoảng đệm để chữ k sát viền quá */     
+        display: inline-block;     /* cho phép các element nằm trên 1 dòng , không kéo dài kích thước hộp*/ 
       }
       .title {
         color: aqua;
         text-align: center;
-        margin-top: 0;
+        margin-top: 0; /* tạo khoảng cách giữa chữ với viền của hộp */
       }
       .song-list {
         color: rgb(19, 19, 20);
         font-family: "Times New Roman", Times, serif;
         font-size: 14pt;
-        margin-bottom: 0;
+        margin-bottom: 0; /* bỏ khoảng cách lề */
       }
     </style>
   </head>
   <body>
+    <!-- 
+     -->
     <div class="box">
       <h1 class="title">Các bài hát thiếu nhi hay nhất</h1>
       <ol class="song-list">

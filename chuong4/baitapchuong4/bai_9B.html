@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chương 4 bài 9B</title>
+</head>
+<body>
+    <script language = "javascript" > 
+    var n = prompt("Nhập số lượng thiết bị văn phòng:", '5');
+    var ds = new Array();
+    for(var i =0; i<n; i++){
+        ds[i] = prompt("Nhập tên thiết bị thứ " + (i+1) + ":", "");
+    }
+    document.write(" <h3> ds các thiết bị là </h3>");
+    document.write(" <table border = '1' cellpadding = '5' cellspacing = '0'>");
+    document.write(" <tr> <th> STT </th> <th> Tên thiết bị </th> <tr/>");
+    
+    var dem = 0;
+    for(var j = 0; j<ds.length; j++){
+        if(ds[j] != null && ds[j].trim().tolowercase()== "computer"){
+            dem ++;
+            document.write("<tr> <td>" + dem + "</td> <td>" + ds[j] + "</td></tr>");
+        }
+    }
+    document.write("</table>");
+    if(dem==0){
+        document.write("k thiết bị")
+    }
+    </script>
+</body>
+</html>
