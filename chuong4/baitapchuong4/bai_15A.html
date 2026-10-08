@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 15 A chương 4</title>
+</head>
+<body>
+    <script language="javascript">
+        function Capnhat() {
+            document.title = Tieude.value; /* thay đổi tiêu đề của trang */
+            document.bgColor = MauNen.value; /* thay đổi màu nền của trang */
+            document.fgColor = MauChu.value; /* thay đổi màu chữ của trang */
+            window.defaultStatus = TrangThai.value; /* thay đổi trạng thái của cửa sổ */
+        }
+    </script>
+    <h2> nhập vào các giá trị và nhấn nút thay đổi</h2>
+    <input type="text" name="Tieude" value="Tiêu đề mới">
+    <input type="text" name="MauNen" value="Nhập màu nền vào đây">
+    <input type="text" name="MauChu" value="Nhập màu chữ vào đây">
+    <input type="text" name="TrangThai" value="Nhập dòng trạng thái vào đây">
+    <br><br>
+    <input type="button" value="Thay đổi" onclick="Capnhat()">
+</body>
+</html>
