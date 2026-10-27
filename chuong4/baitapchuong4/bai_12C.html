@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 12C chương 4</title>
+</head>
+<body>
+    <script>
+        function hien() {
+            var ho = document.getElementById("hoten").value; /* tìm và lấy phần tử có id đc truyền bên trong(id=hoten) */
+            var ten = document.getElementById("ten").value; /* tìm và lấy phần tử có id đc truyền bên trong(id=ten) */
+            alert(ho + " " + ten );
+        }
+    </script>
+    <h2>Nhập họ tên của bạn vào ô trống sau:</h2>
+    <input type="text" id="hoten" value="họ và tên: ">
+    <input type="text" id="ten"  >
+    <input type="button" name="hienthi" value="hiển thị" onclick="hien()">
+</body>
+</html>

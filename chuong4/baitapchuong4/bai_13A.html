@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 13A chương 4</title>
+</head>
+<body>
+    <!-- form dùng để gom nhốm ô só a số b và kq để lấy data hiện ra màn hình -->
+    <h2>nhập 2 số và bấm nút tính tổng: </h2>
+    <form >
+    <input type="text" name="soA"> +
+    <input type="text" name="soB"> =
+    <input type="text" name="Ketqua">
+    <input type="button" value="Tính tổng" onclick="this.form.Ketqua.value = parseFloat(this.form.soA.value) + parseFloat(this.form.soB.value)">
+</body>
+    </form>
+</html>

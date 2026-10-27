@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 14A chương 4</title>
+</head>
+<body>
+    <h2>
+        nhập số a và b vào ô trống:
+    </h2>
+    <script>
+        function PhepTinh(dau) {
+            var a = parseFloat(document.getElementById("soA").value); /* tim phần tử có id số a */
+            var b = parseFloat(document.getElementById("soB").value); /* tìm phần tử có id số b */
+            var ketQua = document.getElementById("ketQua");
+            var ketQua=0;
+            if(dau == '+'){
+                ketQua = a + b;
+            } else if(dau == '-'){
+                ketQua = a - b;
+            } else if(dau == '*'){
+                ketQua = a * b;
+            } else if(dau == '/'){
+                ketQua = a / b;
+            }
+            document.getElementById("ketQua").value = ketQua; /* tìm phần tử có id ketqua gáng gtri vô kết quả */
+        }
+    </script>
+    <form >
+        <input type="text " id="soA" name="Số a" placeholder="Nhập a"> <!-- hiện chữ mờ ghi chú  -->
+        <input type="text" id="soB" name="Số b" placeholder="Nhập b">
+        <input type="text " id="ketQua" placeholder="kết quả" readonly>
+        <br> <br>
+        <input type="button" value="Cộng" onclick="PhepTinh('+')">
+        <input type="button" value="Trừ" onclick="PhepTinh('-')">
+        <input type="button" value="Nhân" onclick="PhepTinh('*')">
+        <input type="button" value="Chia" onclick="PhepTinh('/')">
+    </form>
+</body>
+</html>
